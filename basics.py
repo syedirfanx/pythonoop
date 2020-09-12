@@ -25,6 +25,9 @@ class Dog:
     def get_age(self):
         return self.age
 
+    def set_age(self, age):
+        self.age = age
+
 
 d = Dog("Mug", 7)
 print(type(d))
@@ -33,4 +36,7 @@ h = Dog("Tomy", 9)
 print(d.get_name())
 print(d.get_age())
 print(h.get_name())
+print(h.get_age())
+
+h.set_age(10)
 print(h.get_age())
